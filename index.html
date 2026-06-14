@@ -3,125 +3,325 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sujoy Sundar | AI-Integrated SPFx Architect</title>
-    <!-- Tailwind CSS CDN for modern styles -->
+    <title>Sujoy Sundar Dasgupta | AI-Driven SharePoint & Power Platform Solution Architect</title>
+    <!-- Tailwind CSS for Premium Layout Styles -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Premium Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { background-color: #0b0f19; }
+        body { background-color: #0b111e; }
         .gradient-text {
             background: linear-gradient(to right, #38bdf8, #a855f7, #6366f1);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+        .gradient-border {
+            position: relative;
+        }
+        .gradient-border::after {
+            content: '';
+            position: absolute;
+            bottom: 0; left: 0; right: 0; height: 1px;
+            background: linear-gradient(to right, rgba(56,189,248,0.2), rgba(168,85,247,0.4), rgba(99,102,241,0.2));
+        }
     </style>
 </head>
-<body class="text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white">
+<body class="text-slate-200 font-sans antialiased selection:bg-indigo-500 selection:text-white scroll-smooth">
 
-    <!-- NAVIGATION -->
-    <nav class="border-b border-slate-800 bg-slate-900/50 backdrop-blur sticky top-0 z-50 px-6 py-4">
+    <!-- TOP NAVIGATION BAR -->
+    <nav class="border-b border-slate-800 bg-slate-900/60 backdrop-blur sticky top-0 z-50 px-6 py-4">
         <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <span class="text-xl font-bold tracking-wider gradient-text">SUJOY SUNDAR</span>
+            <div class="flex items-center gap-3">
+                <span class="text-xl font-black tracking-wider gradient-text">SUJOY SUNDAR</span>
+                <span class="text-xs bg-indigo-500/10 text-indigo-400 border border-indigo-500/20 px-2 py-0.5 rounded font-mono hidden sm:inline">v2026.1</span>
+            </div>
             <div class="space-x-6 text-sm font-medium text-slate-400">
                 <a href="#about" class="hover:text-sky-400 transition">About</a>
-                <a href="#workflow" class="hover:text-purple-400 transition">AI Workflow</a>
-                <a href="#articles" class="hover:text-indigo-400 transition">Articles</a>
+                <a href="#ai-efficiency" class="hover:text-purple-400 transition">AI Efficiency</a>
+                <a href="#experience" class="hover:text-indigo-400 transition">Experience</a>
+                <a href="#projects" class="hover:text-sky-400 transition">Products</a>
             </div>
         </div>
     </nav>
 
-    <!-- HERO SECTION -->
-    <header id="about" class="max-w-6xl mx-auto px-6 py-20 text-center lg:text-left lg:flex lg:items-center lg:gap-12">
-        <div class="lg:w-2/3">
-            <span class="bg-indigo-500/10 text-indigo-400 text-xs font-semibold px-3 py-1 rounded-full border border-indigo-500/20">Next-Gen Intranet Engineering</span>
-            <h1 class="text-4xl lg:text-6xl font-black tracking-tight mt-4 mb-6">
-                Architecting Smart <span class="gradient-text">SPFx Solutions</span>
+    <!-- HERO PROFILE HEADER -->
+    <header id="about" class="max-w-6xl mx-auto px-6 py-16 lg:py-24 lg:flex lg:items-center lg:gap-12">
+        <div class="lg:w-3/4 text-center lg:text-left">
+            <span class="bg-sky-500/10 text-sky-400 text-xs font-semibold px-3 py-1 rounded-full border border-sky-500/20 uppercase tracking-widest">
+                <i class="fa-solid var-icon fa-robot mr-1.5"></i> Enterprise Platform Architect
+            </span>
+            <h1 class="text-4xl lg:text-6xl font-black tracking-tight mt-4 mb-4 text-white">
+                SUJOY SUNDAR DASGUPTA
             </h1>
-            <p class="text-lg text-slate-400 max-w-2xl leading-relaxed mb-8">
-                Enterprise SharePoint Framework (SPFx) developer specializing in accelerating workflow lifecycles through autonomous prompt orchestration in **Antigravity IDE** powered by the **Google Gemini AI Model**.
+            <h2 class="text-xl lg:text-2xl font-medium text-slate-400 mb-6">
+                AI-Driven SharePoint & Power Platform Solution Architect
+            </h2>
+            <p class="text-slate-400 max-w-3xl leading-relaxed text-base lg:text-lg mb-8">
+                A results-driven Technical PM and Solution Architect with <strong>19+ years of enterprise experience</strong>, specializing in SharePoint Online, SPFx custom development, and the Microsoft Power Platform. Pioneer of an AI-first delivery strategy utilizing <strong>Antigravity IDE, Gemini, ChatGPT, and Claude</strong> to accelerate deployment lifecycles by up to 70%.
             </p>
+            
+            <!-- Quick Contact Badges -->
+            <div class="flex flex-wrap justify-center lg:justify-start gap-4 text-sm font-mono text-slate-400 mb-8">
+                <a href="mailto:sujoysundar@gmail.com" class="flex items-center gap-2 hover:text-sky-400 bg-slate-900/40 px-3 py-1.5 border border-slate-800 rounded-lg transition">
+                    <i class="fa-regular fa-envelope text-sky-400"></i> sujoysundar@gmail.com
+                </a>
+                <span class="flex items-center gap-2 bg-slate-900/40 px-3 py-1.5 border border-slate-800 rounded-lg">
+                    <i class="fa-solid fa-phone text-purple-400"></i> +91 9987079993
+                </span>
+                <span class="flex items-center gap-2 bg-slate-900/40 px-3 py-1.5 border border-slate-800 rounded-lg">
+                    <i class="fa-solid fa-location-dot text-indigo-400"></i> Mumbai, India
+                </span>
+            </div>
+
+            <!-- Action Buttons -->
             <div class="flex flex-wrap justify-center lg:justify-start gap-4">
-                <a href="#workflow" class="bg-sky-500 hover:bg-sky-600 text-slate-950 font-bold px-6 py-3 rounded-lg transition shadow-lg shadow-sky-500/20">View AI Pipeline</a>
-                <a href="https://linkedin.com" target="_blank" class="border border-slate-700 hover:border-slate-500 bg-slate-800/40 px-6 py-3 rounded-lg transition">Connect on LinkedIn</a>
+                <a href="https://www.linkedin.com/in/sujoysundar/" target="_blank" class="bg-indigo-600 hover:bg-indigo-500 text-white font-bold px-6 py-3 rounded-lg transition shadow-lg shadow-indigo-600/20 flex items-center gap-2">
+                    <i class="fa-brands fa-linkedin"></i> Verified LinkedIn Profile
+                </a>
+                <a href="#projects" class="border border-slate-700 hover:border-slate-500 bg-slate-800/40 px-6 py-3 rounded-lg transition">
+                    Explore Enterprise Products
+                </a>
             </div>
         </div>
         
-        <!-- Interactive Technical Stack Box -->
-        <div class="lg:w-1/3 mt-12 lg:mt-0 bg-slate-900/60 border border-slate-800 p-6 rounded-2xl shadow-xl">
-            <h3 class="text-sm font-semibold tracking-wider text-slate-400 uppercase mb-4 text-left">Core Stack</h3>
-            <div class="grid grid-cols-2 gap-3 text-sm text-left">
-                <div class="bg-slate-800/50 p-3 rounded-lg border border-slate-700/50">🔹 SharePoint / SPFx</div>
-                <div class="bg-slate-800/50 p-3 rounded-lg border border-slate-700/50">✨ Google Gemini AI</div>
-                <div class="bg-slate-800/50 p-3 rounded-lg border border-slate-700/50">🛸 Antigravity IDE</div>
-                <div class="bg-slate-800/50 p-3 rounded-lg border border-slate-700/50">⚛️ React & TypeScript</div>
-                <div class="bg-slate-800/50 p-3 rounded-lg border border-slate-700/50">🌐 Microsoft Graph API</div>
-                <div class="bg-slate-800/50 p-3 rounded-lg border border-slate-700/50">📦 Node.js / Gulp</div>
+        <!-- Profile Photo Frame -->
+        <div class="lg:w-1/4 mt-12 lg:mt-0 flex justify-center">
+            <div class="relative group">
+                <div class="absolute -inset-1.5 bg-gradient-to-r from-sky-500 via-purple-500 to-indigo-500 rounded-2xl blur opacity-30 group-hover:opacity-60 transition duration-500"></div>
+                <div class="relative bg-slate-900 p-2 rounded-2xl border border-slate-800">
+                    <!-- Automatically loading your embedded photo asset -->
+                    <img src="watermarked_img_9641341207940977221.png" alt="Sujoy Sundar Dasgupta" class="w-56 h-56 lg:w-64 lg:h-64 object-cover rounded-xl shadow-inner">
+                </div>
             </div>
         </div>
     </header>
 
-    <hr class="border-slate-900 max-w-6xl mx-auto">
-
-    <!-- THE AGENTIC SHIFT WORKFLOW -->
-    <section id="workflow" class="max-w-6xl mx-auto px-6 py-20">
-        <div class="text-center max-w-3xl mx-auto mb-16">
-            <h2 class="text-3xl font-bold tracking-tight mb-4">Agentic AI-Accelerated Development</h2>
-            <p class="text-slate-400">How combining multi-agent frameworks with custom intranet development slashes implementation times from days to minutes.</p>
-        </div>
-
-        <div class="grid md:grid-cols-3 gap-8">
-            <div class="bg-slate-900/40 border border-slate-800 p-8 rounded-xl hover:border-sky-500/40 transition">
-                <div class="text-sky-400 font-mono text-xl mb-4">01 / Prompt Scaffolding</div>
-                <h3 class="text-xl font-bold mb-2">Intent Mapping</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Orchestrating conversational requirements into structural file configurations inside Antigravity's multi-file canvas framework.</p>
+    <!-- CORE STRATEGIC METRICS DASHBOARD -->
+    <section class="max-w-6xl mx-auto px-6 mb-20">
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-xl text-center md:text-left">
+                <div class="text-4xl font-black text-sky-400 font-mono mb-1">19+</div>
+                <div class="text-xs uppercase tracking-widest text-slate-500 font-semibold">Years Enterprise Experience</div>
             </div>
-            <div class="bg-slate-900/40 border border-slate-800 p-8 rounded-xl hover:border-purple-500/40 transition">
-                <div class="text-purple-400 font-mono text-xl mb-4">02 / Gemini Generation</div>
-                <h3 class="text-xl font-bold mb-2">Deterministic Code</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Gemini models write perfectly typed React modules, context properties, and Microsoft Graph integrations in real-time.</p>
+            <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-xl text-center md:text-left">
+                <div class="text-4xl font-black text-purple-400 font-mono mb-1">60% – 70%</div>
+                <div class="text-xs uppercase tracking-widest text-slate-500 font-semibold">Delivery Efficiency via Agentic AI</div>
             </div>
-            <div class="bg-slate-900/40 border border-slate-800 p-8 rounded-xl hover:border-indigo-500/40 transition">
-                <div class="text-indigo-400 font-mono text-xl mb-4">03 / Autonomous Review</div>
-                <h3 class="text-xl font-bold mb-2">Agent Peer Audit</h3>
-                <p class="text-slate-400 text-sm leading-relaxed">Concurrent local IDE code agents review logic blocks, catch dependency issues, and optimize builds prior to deployment compilation.</p>
+            <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-xl text-center md:text-left">
+                <div class="text-4xl font-black text-indigo-400 font-mono mb-1">25+</div>
+                <div class="text-xs uppercase tracking-widest text-slate-500 font-semibold">Major Enterprise Projects Delivered</div>
             </div>
         </div>
     </section>
 
-    <!-- FEATURED PUBLICATIONS -->
-    <section id="articles" class="bg-slate-900/30 border-t border-slate-900 py-20">
-        <div class="max-w-6xl mx-auto px-6">
-            <h2 class="text-3xl font-bold tracking-tight mb-12 text-center lg:text-left">Featured Publication</h2>
+    <!-- AGENTIC WORKFLOW & EFFICIENCY INTEGRATION CASE STUDY -->
+    <section id="ai-efficiency" class="bg-slate-900/20 border-t border-b border-slate-900 py-20 px-6">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl font-bold tracking-tight mb-4">The Agentic Shift: AI-Integrated SPFx Architecture</h2>
+                <p class="text-slate-400">By pairing Google Gemini and custom LLM prompts with the multi-agent orchestration tools inside Antigravity IDE, boilerplate tasks are automated, enabling immediate optimization for large-scale enterprise intranets.</p>
+            </div>
+
+            <!-- Embedded Article Infographic Visual Block -->
+            <div class="mb-16 bg-slate-950 p-3 rounded-2xl border border-slate-800 shadow-2xl overflow-hidden">
+                <img src="watermarked_img_12481768427736546605.png" alt="AI Integrated SPFx Development Lifecycle" class="w-full h-auto rounded-xl">
+            </div>
+
+            <!-- Summary Table Metrics Block -->
+            <div class="bg-slate-900/50 border border-slate-800 rounded-xl overflow-hidden max-w-4xl mx-auto">
+                <div class="p-5 border-b border-slate-800 bg-slate-900/80">
+                    <h3 class="font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-chart-simple text-purple-400"></i> Delivery Lifecycle Comparison Matrix
+                    </h3>
+                </div>
+                <div class="overflow-x-auto">
+                    <table class="w-full text-left text-sm border-collapse">
+                        <thead>
+                            <tr class="bg-slate-950 text-slate-400 border-b border-slate-800">
+                                <th class="p-4 font-semibold">Development Metric</th>
+                                <th class="p-4 font-semibold">Legacy Framework Timeline</th>
+                                <th class="p-4 font-semibold text-sky-400">AI-Integrated Pipeline (Gemini + Antigravity)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="divide-y divide-slate-800/60 text-slate-300">
+                            <tr>
+                                <td class="p-4 font-medium">Initial Scaffolding</td>
+                                <td class="p-4">Hours of structure verification</td>
+                                <td class="p-4 text-sky-400 font-medium">Minutes via automated target prompting</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium">API Integration</td>
+                                <td class="p-4">Manual Microsoft Graph routing mapping</td>
+                                <td class="p-4 text-sky-400 font-medium">Context-aware instant code block generation</td>
+                            </tr>
+                            <tr>
+                                <td class="p-4 font-medium">Code Compliance Audit</td>
+                                <td class="p-4">Manual code reviews post-sprint</td>
+                                <td class="p-4 text-sky-400 font-medium">Real-time local IDE agent checking</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TECHNICAL REPERTOIRE PILLARS -->
+    <section class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-2xl font-bold tracking-tight mb-12 text-center lg:text-left">Engineered Technical Stack</h2>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            <div class="bg-slate-900/30 border border-slate-800/80 p-6 rounded-xl">
+                <h3 class="text-sm font-bold text-sky-400 uppercase tracking-widest font-mono mb-4">🤖 AI Architecture</h3>
+                <ul class="space-y-2 text-sm text-slate-400">
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>Antigravity IDE Ecosystem</li>
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>Gemini & Claude Models</li>
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>Copilot Studio Configurations</li>
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>Autonomous Multi-Agent Prompts</li>
+                </ul>
+            </div>
+            <div class="bg-slate-900/30 border border-slate-800/80 p-6 rounded-xl">
+                <h3 class="text-sm font-bold text-purple-400 uppercase tracking-widest font-mono mb-4">🏗️ SharePoint</h3>
+                <ul class="space-y-2 text-sm text-slate-400">
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>SPFx Custom Development</li>
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>SharePoint Online Admin</li>
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>Fluent UI & Custom Extensions</li>
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>Sharegate Migration Architect</li>
+                </ul>
+            </div>
+            <div class="bg-slate-900/30 border border-slate-800/80 p-6 rounded-xl">
+                <h3 class="text-sm font-bold text-indigo-400 uppercase tracking-widest font-mono mb-4">📊 Power Platform</h3>
+                <ul class="space-y-2 text-sm text-slate-400">
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>Power Apps Custom Form matrix</li>
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>Power Automate Multilevel SLAs</li>
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>Power BI Report Dashboards</li>
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>Data Modelling Frameworks</li>
+                </ul>
+            </div>
+            <div class="bg-slate-900/30 border border-slate-800/80 p-6 rounded-xl">
+                <h3 class="text-sm font-bold text-slate-400 uppercase tracking-widest font-mono mb-4">🎨 Core Engineering</h3>
+                <ul class="space-y-2 text-sm text-slate-400">
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>ReactJS (ES6+) & TypeScript</li>
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>WCAG Accessibility Standards</li>
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>ASP.NET / SQL Architecture</li>
+                    <li><i class="fa-solid fa-angle-right text-xs mr-2 text-slate-600"></i>Technical Team Leadership</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROFESSIONAL CHRONOLOGY WORK EXPERIENCE -->
+    <section id="experience" class="max-w-6xl mx-auto px-6 py-10">
+        <h2 class="text-2xl font-bold tracking-tight mb-12 text-center lg:text-left">Professional Timeline</h2>
+        <div class="space-y-8 relative border-l border-slate-800 pl-6 ml-4">
             
-            <div class="bg-slate-900/80 border border-slate-800 rounded-2xl overflow-hidden shadow-xl lg:flex items-stretch">
-                <!-- Visual Placeholder - You can link your generated image here -->
-                <div class="lg:w-1/3 bg-gradient-to-br from-indigo-950 via-slate-900 to-sky-950 p-8 flex flex-col justify-between border-b lg:border-b-0 lg:border-r border-slate-800 text-center lg:text-left">
-                    <div>
-                        <span class="text-xs uppercase font-mono tracking-widest text-sky-400">LinkedIn Article</span>
-                        <h4 class="text-xl font-bold mt-2 text-white">The Agentic Shift in SPFx</h4>
+            <!-- Mundrisoft -->
+            <div class="relative">
+                <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-indigo-500 border-4 border-slate-950"></div>
+                <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-xl">
+                    <div class="md:flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Technical PM / SharePoint Solution Specialist</h3>
+                            <span class="text-sm text-indigo-400 font-medium">Mundrisoft Solutions</span>
+                        </div>
+                        <span class="text-xs font-mono bg-slate-800 text-slate-400 px-2 py-1 rounded block mt-2 md:mt-0">July 2015 – Present • Pune, India</span>
                     </div>
-                    <div class="text-xs text-slate-500 mt-6 lg:mt-0">Published Trends & Research</div>
+                    <ul class="space-y-2 text-sm text-slate-400">
+                        <li>• Manage complex SPFx web parts and extensions utilizing Fluent UI, supporting thousands of live enterprise active workspace seats.</li>
+                        <li>• Achieved a 60–70% speed improvement by deploying generative multi-agent configurations directly into the delivery cycle workflow.</li>
+                        <li>• Standardized permissions mapping systems, governance models, content schemas, and automated workflows on Microsoft 365.</li>
+                    </ul>
                 </div>
-                
-                <div class="lg:w-2/3 p-8 flex flex-col justify-between">
-                    <div>
-                        <h3 class="text-2xl font-bold mb-4 text-white">How AI-Integrated SPFx Development via Antigravity IDE & Gemini is Redefining Enterprise Workspace Efficiency</h3>
-                        <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                            Traditional web part construction requires massive manual layout structure configurations and repetitive API mapping boilerplate. Exploring how multi-agent architectures and LLM context awareness change runtime constraints, optimize dependency management, and dramatically secure deployments.
-                        </p>
+            </div>
+
+            <!-- Nayamode -->
+            <div class="relative">
+                <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-700 border-4 border-slate-950"></div>
+                <div class="bg-slate-900/40 border border-slate-800 p-6 rounded-xl">
+                    <div class="md:flex justify-between items-start mb-4">
+                        <div>
+                            <h3 class="text-lg font-bold text-white">Module Leader</h3>
+                            <span class="text-sm text-slate-400 font-medium">Nayamode Solutions</span>
+                        </div>
+                        <span class="text-xs font-mono bg-slate-800 text-slate-400 px-2 py-1 rounded block mt-2 md:mt-0">May 2007 – June 2015 • Mumbai, India</span>
                     </div>
-                    <div>
-                        <a href="https://linkedin.com" target="_blank" class="text-indigo-400 hover:text-indigo-300 font-semibold text-sm inline-flex items-center gap-2 transition">
-                            Read the full text on LinkedIn ➔
-                        </a>
-                    </div>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Supervised implementation blocks across legacy On-Premises platforms (SharePoint 2003, 2007, 2010, 2013). Authored InfoPath logic structures, automated workflows, and backend solutions leveraging CAML Queries and data integrations via SOAP web interfaces.
+                    </p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="border-t border-slate-900 py-8 text-center text-xs text-slate-500">
-        <p>&copy; 2026 Sujoy Sundar. Powered by GitHub Pages.</p>
+    <!-- LIVE ENTERPRISE PRODUCT & CASE GALLERY -->
+    <section id="projects" class="max-w-6xl mx-auto px-6 py-20">
+        <h2 class="text-2xl font-bold tracking-tight mb-4 text-center lg:text-left">Enterprise Product Deployments</h2>
+        <p class="text-slate-400 mb-12 text-center lg:text-left">Validated production modules scaled globally across enterprise tenants.</p>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <!-- Event Manager 365 -->
+            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden shadow-xl flex flex-col justify-between">
+                <div class="p-6 border-b border-slate-800/60 bg-gradient-to-r from-indigo-950/20 to-transparent">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-mono text-sky-400 uppercase tracking-widest">Flagship SPFx Product</span>
+                        <span class="text-xs bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 px-2 py-0.5 rounded font-medium">Live In Production</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Event Manager 365 (by Mundrisoft)</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Architected a suite of five complex web parts delivering unified calendar workflows directly inside modern SharePoint pages. Engineered with SharePoint theme inheritance support and 100% WCAG accessibility compliance.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+                        <span class="bg-slate-800 px-2 py-1 rounded">SPFx</span>
+                        <span class="bg-slate-800 px-2 py-1 rounded">React</span>
+                        <span class="bg-slate-800 px-2 py-1 rounded">Fluent UI</span>
+                        <span class="bg-slate-800 px-2 py-1 rounded">Search Schema</span>
+                    </div>
+                    <div class="mt-4 border-t border-slate-800/80 pt-4">
+                        <p class="text-xs text-slate-400"><strong>Enterprise Footprint:</strong> Trusted by global organizations including <strong>HP, 3M, Intel, and NH</strong>.</p>
+                    </div>
+                </div>
+                <div class="p-4 bg-slate-950/60 text-right">
+                    <a href="https://mundrisoft.com/event-manager-365-by-mundrisoft/" target="_blank" class="text-sky-400 hover:text-sky-300 text-xs font-semibold inline-flex items-center gap-1.5">
+                        View Live Product Directory <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Sales Commission Tracker -->
+            <div class="bg-slate-900/50 border border-slate-800 rounded-2xl overflow-hidden shadow-xl flex flex-col justify-between">
+                <div class="p-6">
+                    <div class="flex justify-between items-center mb-3">
+                        <span class="text-xs font-mono text-purple-400 uppercase tracking-widest">Custom Architecture</span>
+                        <span class="text-xs bg-purple-500/10 text-purple-400 border border-purple-500/20 px-2 py-0.5 rounded font-medium">Role-Based Access</span>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-2">Sales Commission Tracker</h3>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        A modern internal app matrix unifying custom SPFx web parts, Power Automate engine triggers, and multi-layered performance visualization charts. Powered by optimized queries for secure client dashboard visibility.
+                    </p>
+                    <div class="mt-4 flex flex-wrap gap-2 text-xs font-mono text-slate-400">
+                        <span class="bg-slate-800 px-2 py-1 rounded">SPFx</span>
+                        <span class="bg-slate-800 px-2 py-1 rounded">Power Automate</span>
+                        <span class="bg-slate-800 px-2 py-1 rounded">Power BI</span>
+                        <span class="bg-slate-800 px-2 py-1 rounded">Gemini Optimized</span>
+                    </div>
+                </div>
+                <div class="p-6 pt-0 bg-transparent text-slate-500 text-xs italic">
+                    Accelerated via Antigravity prompting, achieving a ~65% improvement in deployment testing velocity.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ACCREDITATION FOOTER SECTION -->
+    <footer class="border-t border-slate-900 bg-slate-950/40 py-12 text-center text-sm text-slate-500">
+        <div class="max-w-6xl mx-auto px-6 space-y-4">
+            <div class="flex justify-center gap-6 text-slate-400 text-lg">
+                <a href="https://www.linkedin.com/in/sujoysundar/" target="_blank" class="hover:text-indigo-400"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:sujoysundar@gmail.com" class="hover:text-sky-400"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+            <p class="text-xs">Certified Professional — MS Exam 070-480: Programming in HTML5, JavaScript, and CSS3</p>
+            <p class="text-xs text-slate-600">&copy; 2026 Sujoy Sundar Dasgupta. Hosted securely on GitHub Pages.</p>
+        </div>
     </footer>
 
 </body>
